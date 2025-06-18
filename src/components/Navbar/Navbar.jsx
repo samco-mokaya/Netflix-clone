@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from '../../assets/logo.png' 
 import search_icon from '../../assets/search_icon.svg'
 import caret from '../../assets/caret_icon.svg'
+import profile_img from '../../assets/profile_img.png'
 import bell_icon from '../../assets/bell_icon.svg'
 const Navbar = () => {
   return (
@@ -23,7 +24,8 @@ const Navbar = () => {
         <p>Children </p>
         <img src={bell_icon} alt="" />
         <div className="navbar profile">
-          
+          <img src={profile_img} alt="" className='profile' />
+          <img src={caret} alt="" />
         </div>
       </div>
       </div>
