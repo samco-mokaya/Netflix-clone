@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import cards_data from '../../assets/cards/cards_data.js';
 
 
-const TitleCards = () => {
+const TitleCards = ({title,category}) => {
 
 const cardsRef = useRef();
 
@@ -18,7 +18,7 @@ useEffect(()=>{
 
   return (
     <div className='title-cards'> 
-      <h2>Popular on Netflix</h2>
+      <h2>{title?title:"popular on Netflix"}</h2>
       <div className="card-data">
         <div className="card-list" ref={cardsRef}>
           {cards_data.map((card,index) =>{
