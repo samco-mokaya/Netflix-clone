@@ -6,6 +6,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       <TitleCards title={"Only on Netflix"}/>
       <TitleCards title={"Top picks for you"}/>
     </div>
+  <Footer/>
      </div>
   )
 }
